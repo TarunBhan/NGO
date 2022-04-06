@@ -1,0 +1,121 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-image: linear-gradient(to right, #c99cfac7, #6fa5ff, #6ecaff, #abe5f3, #c3f6f0);
+}
+ul a{
+  text-decoration: none;
+justify-content: space-around;
+padding: 0.3rem;
+}
+.navbar ul{
+  list-style-type: none;
+  padding: 0;
+  float: right;
+  flex-direction: row;
+  justify-content: space-evenly  ;
+  flex-wrap: nowrap;
+  background-color: rgb(7, 32, 1);
+  padding-right: 4em;  
+  padding: 25px;
+  margin:0;
+}
+ul a{
+  padding-right: 4rem;
+  text-decoration: none;
+  color:white;
+  scroll-behavior: smooth;
+}
+ [placeholder], *[placeholder] {
+  color: rgb(254, 253, 253) !important;
+}
+.form-donate{
+ width:50%;
+float:left;
+ margin-left:20rem;
+ background-image: linear-gradient(to left top, #07c1af, #00b9c2, #00aed1, #00a2db, #0094dc, #0098e1, #009de6, #00a1eb, #00b9f5, #00d1f8, #0fe6f6, #5ffbf1);
+ padding: 35px 100px;
+ border-radius:12px; 
+ display: block;
+}
+form .block{
+  width: 39%;
+    height: 69px;
+    float: left;
+    margin-right: 7%;
+    margin-bottom: 20px;
+    padding: 0.6rem
+}
+
+form .block input{
+  width:100%;
+  height: 30px;
+  float: left;
+  padding: 12px;
+  background-color: #6de2ef00;
+  border: 1px solid #ffffff;
+font-size: 16px;
+  font-family: 'GILLSANSMEDIUM_0';
+border-radius:5px;
+color: white;
+}
+::placeholder {
+        
+  /* Firefox, Chrome, Opera */
+  color: rgb(238, 238, 238);
+}
+.pattern-bg{
+  width: 100%;
+  float: left;
+  
+  padding: 20px 0;
+  background-repeat: no-repeat;
+ 
+}
+.left-content{
+  float:left;
+width:35%;
+}
+.whoare_we{
+float :left;
+margin-top:40px;
+margin-bottom:40px;
+}
+.left-content span{
+  letter-spacing: 13px;
+  font-size: large;
+  color:rgb(81, 79, 82);
+  text-transform: uppercase;
+  font-family: 'GILLSANSMEDIUM_0';
+  margin-left:50px;
+}
+.left-content strong , .our-work{
+  display: block;
+  font-size: 95px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: 'GILLSANSHEAVY_0';
+  color: #8c8a8a;
+  margin-left:70px;
+}
+.right-content{
+width:65%;
+float: left;
+position: relative;
+}
+.btn-scroll{
+  float:right;
+  position  :fixed;
+
+}
+.text-supp{
+  display: block;
+  color:#da0a98d0;
+  font-size: 20px;
+  text-transform: uppercase;
+font-family: sans-serif;
+text-align:center;
+}

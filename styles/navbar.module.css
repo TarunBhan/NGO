@@ -1,0 +1,23 @@
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+   
+
+    margin-right: auto;
+
+
+}
+.n1{
+background-color: rgb(137, 238, 131);
+    float:right;   
+    justify-content: space-evenly;
+      
+        width: 40rem;
+        padding:0px 30px;
+}
+
+.ul{
+    margin-left:1rem;
+    text-decoration: none;
+   
+  }
