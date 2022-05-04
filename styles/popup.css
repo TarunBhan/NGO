@@ -1,0 +1,33 @@
+    .popup{
+    margin:12rem 0 0 24rem;
+    }
+    .inner-popup{
+       position: absolute;
+        padding: 32px;
+        max-width: 540px;
+        width: 40%;
+        margin:0 auto;
+        height: 15vh;
+        background-color: rgba(63, 63, 57, 0.785);
+    }
+    .popup-inner .close-button{
+    position: absolute;
+    top:16px;
+    right:16px;
+    }
+    h1{
+    color: rgb(246, 0, 0);
+    text-align: center;
+    }
+    .close-button{
+    margin:auto;
+    display: block;
+    padding:4px;
+    text-align: center;
+    width:7rem;
+    height: 2rem;
+    font-size: large;
+    }
+    .wrapper{
+   align-items: center;
+    }

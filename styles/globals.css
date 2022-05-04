@@ -33,21 +33,20 @@ ul a{
   color: rgb(254, 253, 253) !important;
 }
 .form-donate{
- width:50%;
-float:left;
- margin-left:20rem;
+ width:35%;
  background-image: linear-gradient(to left top, #07c1af, #00b9c2, #00aed1, #00a2db, #0094dc, #0098e1, #009de6, #00a1eb, #00b9f5, #00d1f8, #0fe6f6, #5ffbf1);
  padding: 35px 100px;
  border-radius:12px; 
- display: block;
+position: relative;
+
 }
 form .block{
-  width: 39%;
-    height: 69px;
-    float: left;
+  width:20rem;
+  height:50px;
     margin-right: 7%;
     margin-bottom: 20px;
-    padding: 0.6rem
+    padding: 0.6rem;
+    margin:0 auto;
 }
 
 form .block input{
@@ -55,12 +54,13 @@ form .block input{
   height: 30px;
   float: left;
   padding: 12px;
+  cursor: pointer;
   background-color: #6de2ef00;
   border: 1px solid #ffffff;
-font-size: 16px;
+  font-size: 16px;
   font-family: 'GILLSANSMEDIUM_0';
-border-radius:5px;
-color: white;
+  border-radius:5px;
+  color: white;
 }
 ::placeholder {
         
@@ -70,10 +70,10 @@ color: white;
 .pattern-bg{
   width: 100%;
   float: left;
-  
   padding: 20px 0;
   background-repeat: no-repeat;
- 
+ display: flex;
+ justify-content: center;
 }
 .left-content{
   float:left;
@@ -106,11 +106,45 @@ width:65%;
 float: left;
 position: relative;
 }
-.btn-scroll{
-  float:right;
-  position  :fixed;
-
+#btn-scroll{
+  float: right;
+  margin-right:12px;
+  padding:12px;
+  margin-bottom:12px;
+  background: #d53369;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  font-size: 17px;
+  font-size:500;
+  border-radius:23px;
+  width: 200px;
+  color:white;
 }
+
+#btn-scroll span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  #btn-scroll span:after {
+    content: 'TOP';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #btn-scroll span {
+    padding-right: 40px;
+  }
+  
+  #btn-scroll:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
 .text-supp{
   display: block;
   color:#da0a98d0;
@@ -118,4 +152,35 @@ position: relative;
   text-transform: uppercase;
 font-family: sans-serif;
 text-align:center;
+}
+   .title{
+    color:white;
+text-align: center;
+background-color: #00d1f8;
+  }
+  .help{
+    cursor: pointer;
+  }
+/* global */
+
+footer{
+  display: flex;
+  flex-direction: row;
+position: relative;
+justify-content:space-around;
+flex-wrap: nowrap;
+gap:2rem;
+margin:0 auto;
+
+height:266px;
+
+}
+.footer-links{
+  color: rgb(191, 0, 254);
+  font-weight: 500;
+  font-size:20px;
+  font-family: sans-serif;
+  padding: 23px;
+  cursor: pointer;
+  margin-top:5rem;
 }

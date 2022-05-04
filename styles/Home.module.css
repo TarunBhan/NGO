@@ -114,3 +114,23 @@
     flex-direction: column;
   }
 }
+
+.center{
+  display: flex;
+  justify-content: center;
+  top:50%;
+  margin-top:2rem;
+}
+.btn{
+  background-color: rgb(21, 200, 30);
+  padding:4px;
+margin:0 auto;
+  width:7rem;
+  height: 3rem;;color:white;
+  font-size: large;
+}
+.btn:hover{
+  background-color: #5bf30f;
+  cursor: pointer;
+  
+}

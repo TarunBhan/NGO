@@ -6,14 +6,14 @@ export   const  navLinks=[
     },
     {  
         id:2,
-        name:'about',
+        name:'about',   
         path:'#about'
     },
     {
         id:3,
         name:'Donate',
         path:'#donate-s'
-    },
+    },  
     {
         id:4,
         name:'Awards',

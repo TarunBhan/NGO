@@ -1,12 +1,7 @@
 import React from "react";
 import Image from "next/image";
 const About = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
   return (
     <>
       <div className="whoare_we" id="about">
@@ -37,10 +32,7 @@ const About = () => {
         tenetur at asperiores, eveniet dicta accusantium maiores animi nisi
         mollitia assumenda quos perferendis quo nesciunt!
       </p>
-      <button id="btn-scroll" onClick={() => scrollToTop()}>
-        {" "}
-        ^^
-      </button>
+      
     </>
   );
 };
