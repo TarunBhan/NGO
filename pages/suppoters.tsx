@@ -5,6 +5,7 @@ import { sliderData } from "./slider";
 
 const suppoters = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  
   return (
     <div className="text-supp">
         <h1>Our Supporters</h1>

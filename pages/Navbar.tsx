@@ -6,6 +6,7 @@ import { useUser } from "@auth0/nextjs-auth0";
 const Navbar = () => {
   const {user,isLoading,error}=useUser();
 
+
   return (
     <div className={styles.navbar}>
       <nav className="navbar">
@@ -13,20 +14,20 @@ const Navbar = () => {
         
           {navLinks.map((link, i) => {
             return (
-              <>
-                <Link href={link.path}>
-                  <a key={link.id} style={{ scrollBehavior: "smooth" }}>
+              
+                <Link href={link.path} key={link.id} >
+                  <a style={{ scrollBehavior: "smooth" }}>
                     {link.name}
                   </a>
                 </Link>
-              </>
+            
             );
           })}
-          {!user&&(<Link href="api/auth/login">
+          {!user&&(<Link href="/api/auth/login">
           <a>Login</a>
             </Link>)}  
-            {user&&(<Link href="api/auth/logout">
-          <a>Logout</a>
+            {user&&(<Link href="/api/auth/logout">
+          <a>Logout {user.name}</a>
             </Link>)}  
         </ul>
 

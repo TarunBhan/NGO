@@ -25,13 +25,23 @@ const [button,setButton] =useState(false);
   // }, [input]);
   const Post = (e) => {
     e.preventDefault();
-    const { name, email, amount, adress } = user;
+    const { name, email, amount, address } = user;
     console.log(name);
-    if(name=='')
+    if(name=='' )
     {
       alert('u ned to write the name');
       return false;
 
+    }
+    else if( address=='')
+    {
+      alert('please give all the details');
+return false;
+    }
+    else if( amount =='')
+    {
+      alert("Enter the amount you want to donate");
+      return false;
     }
     setButton(true);
   };

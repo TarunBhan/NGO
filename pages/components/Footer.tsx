@@ -1,5 +1,6 @@
 import React from 'react'
 import Flexbox from './Flexbox'
+
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -7,26 +8,45 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
+  const str:string='Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis voluptatibus labore amet sequi voluptatum omnis explicabo aliquid laudantium libero.';
   return (
-    <>
-    <footer>
+    < footer>
+    <div className='footer-1'>
       <div className="f-content">
-<Flexbox name='Home'/>
+<Flexbox name='Home' content={str}/>
       </div>
       <div>
-      <Flexbox name='About' path='#about'/>
+      <Flexbox name='About' path='#about' content={str} />
       </div>
       <div>
-      <Flexbox name='Social' path='https://github.com/TarunBhan'/>
-      </div>
-      <div>
-      <Flexbox name='Donate' amount='12' path='#donate-s'/>
+      <Flexbox name='Social' content={str}/>
       </div>
       
-    </footer><button id="btn-scroll" onClick={() => scrollToTop()}>
+    </div>
+  
+    <br></br> <hr></hr>
+
+
+    <div className='content-f'> 
+    <div id='heading-footer'> <span>NGO FOUNDATION</span></div>
+    <div className="links">
+      <div>
+        <a href="#">About </a>
+      </div>
+      <div>
+        <a href="#">Help </a>
+      </div>
+      <div>
+        <a href="#">Legal </a>
+      </div>
+    </div>
+    <div>
+    <button id="btn-scroll" onClick={() => scrollToTop()}>
         <span>Swipe </span>
-        
-      </button></>
+      </button>
+      </div>
+      </div>
+      </footer>
   )
 }
 

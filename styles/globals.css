@@ -111,10 +111,8 @@ position: relative;
   margin-right:12px;
   padding:12px;
   margin-bottom:12px;
-  background: #d53369;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #03ca99;  /* fallback for old browsers */
+
   font-size: 17px;
   font-size:500;
   border-radius:23px;
@@ -163,24 +161,8 @@ background-color: #00d1f8;
   }
 /* global */
 
-footer{
-  display: flex;
-  flex-direction: row;
-position: relative;
-justify-content:space-around;
-flex-wrap: nowrap;
-gap:2rem;
-margin:0 auto;
 
-height:266px;
-
-}
-.footer-links{
-  color: rgb(191, 0, 254);
-  font-weight: 500;
-  font-size:20px;
-  font-family: sans-serif;
-  padding: 23px;
-  cursor: pointer;
-  margin-top:5rem;
+.slick{
+  width:50%;
+  margin:0 auto;
 }

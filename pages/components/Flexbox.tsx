@@ -1,14 +1,14 @@
 import React from 'react'
 import Link from 'next/link';
+
 import { CLIENT_RENEG_WINDOW } from 'tls';
-const Flexbox = ({name,amount,path}:any) => {
+const Flexbox = ({name,amount,content}:any) => {
 
   return (
-    <div className='footer-links'>
-
-        <a href={path}>{name}</a>
-
-    </div>
+    <div className='dev-footer'>
+   <h1>{name}</h1>
+   <p> {content}</p>
+   </div>
   )
 }
 

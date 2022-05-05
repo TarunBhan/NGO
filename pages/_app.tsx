@@ -1,22 +1,14 @@
 import "../styles/globals.css";
 import "../styles/slider.css";
 import"../styles/popup.css";
+import '../styles/footer.css';
 import type { AppProps } from "next/app";
 import Router from "next/router";
 import {UserProvider} from '@auth0/nextjs-auth0'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import NextNProgress from "nextjs-progressbar";
 function MyApp({ Component, pageProps }: AppProps) {
-  Router.events.on('routeChangeStart',()=>{
-  console.log('sd');
-  
-  })
-Router.events.on('routeChangeComplete',()=>{
-  console.log('on Complete');
-  
-})
-Router.events.on('routeChangeError',()=>{
-  console.log('on error');
-})
   return (
   <UserProvider>
     <NextNProgress
