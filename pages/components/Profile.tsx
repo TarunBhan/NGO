@@ -2,7 +2,7 @@ import React from 'react'
 import { useUser} from '@auth0/nextjs-auth0';
 
 function Profile() {
-    const {user,isLoading}=useUser();
+    const {user,isLoading}:any=useUser();
   return (
     <div>
         <div> 
