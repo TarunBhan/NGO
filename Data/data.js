@@ -1,4 +1,5 @@
-export   const  navLinks=[
+
+  export const navLinks=[
     {
         id:1,
         name:'Home',
@@ -20,4 +21,6 @@ export   const  navLinks=[
         path:'#Awards'
     }
 ]
-// this is me 
+
+
+
