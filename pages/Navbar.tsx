@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import styles from "../styles/navbar.module.css";
-import { navLinks } from "./data.js";
+import  {navLinks}  from "../Data/data"
+// import data from './Data/data';
+import { useState } from "react";
 import { useUser } from "@auth0/nextjs-auth0";
 const Navbar = () => {
   const {user,isLoading,error}=useUser();
-
-
   return (
     <div className={styles.navbar}>
       <nav className="navbar">

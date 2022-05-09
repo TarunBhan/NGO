@@ -5,7 +5,7 @@ import Image from "next/image";
 import pic from "./images-slides/logo.jpeg";
 import Donate from "./Donate";
 import About from "./About";
-import Suppoters from "./suppoters";
+
 import Slick from './components/slick'
 import Carousel from "./carousel";
 import Footer from "./components/Footer";
